@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image from "next/image";
+import Player from "../components/Player";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -18,13 +18,11 @@ const Home: NextPage = () => {
       <main>
         <h1>dr34m-radio</h1>
 
-        <div>
-          <audio
-            autoPlay
-            controls
-            src="https://ssl.srvstm.com:19480/;%22%3E"
-          ></audio>
-        </div>
+        <Player
+          autoPlay={false}
+          controls={true}
+          src="https://ssl.srvstm.com:19480/;%22%3E"
+        />
       </main>
     </div>
   );
