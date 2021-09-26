@@ -1,6 +1,6 @@
 import { Flex, Text } from "@chakra-ui/layout";
 import React from "react";
-import player from "../../styles/player.module.css";
+import player from "../styles/player.module.css";
 
 type PlayerProps = React.DetailedHTMLProps<
   React.AudioHTMLAttributes<HTMLAudioElement>,
@@ -19,7 +19,7 @@ const Player: React.FC<PlayerProps> = ({ autoPlay, controls, src }) => {
       position="absolute"
       bottom="0"
       alignItems="center"
-      bgColor="#ddd"
+      maxW={{ base: "100vw", lg: "1280px", xl: "1280px" }}
     >
       <audio
         autoPlay={autoPlay}
@@ -28,9 +28,9 @@ const Player: React.FC<PlayerProps> = ({ autoPlay, controls, src }) => {
         className={player.audio}
       ></audio>
       <Text
-        as="h1"
+        as="h4"
         fontWeight="bold"
-        fontSize="3xl"
+        fontSize="2xl"
         textAlign="center"
         px={8}
         color="#111"

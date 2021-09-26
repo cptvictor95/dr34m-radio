@@ -1,7 +1,8 @@
 .audio {
   min-height: 10vh;
   width: 40vw;
-  background-color: #ddd;
+  display: flex;
+  align-items: center;
 }
 .audio:hover,
 .audio:focus,
@@ -9,17 +10,11 @@
   /* -webkit-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
   -moz-box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4);
   box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.4); */
-  background-color: #ddd;
   width: 40vw;
 }
 
 .audio::-webkit-media-controls-enclosure {
-  border-radius: 0;
   width: 40vw;
-  display: flex;
-  align-items: center;
-  padding: 2rem;
-  background-color: #ddd;
 }
 .audio::-webkit-media-controls-enclosure:hover {
   border-radius: 0;
