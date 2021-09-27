@@ -31,7 +31,7 @@ const Main: React.FC<{ children: React.ReactNode; title: string }> = ({
       <Player
         autoPlay={false}
         controls={true}
-        src="https://ssl.srvstm.com:19480/;%22%3E"
+        src="http://paineldj6.com.br:8394/stream"
       />
     </Flex>
   );
